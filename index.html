@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrador de Condominio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex bg-gray-100">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-blue-800 text-white flex flex-col">
+    <div class="p-6 text-center text-2xl font-bold border-b border-blue-700">
+      CondoAdmin 🏢
+    </div>
+    <nav class="flex-1 p-4 space-y-3">
+      <a href="#dashboard" class="block px-4 py-2 rounded-lg hover:bg-blue-700 transition">🏠 Dashboard</a>
+      <a href="#residentes" class="block px-4 py-2 rounded-lg hover:bg-blue-700 transition">👥 Residentes</a>
+      <a href="#gastos" class="block px-4 py-2 rounded-lg hover:bg-blue-700 transition">💰 Gastos</a>
+      <a href="#mantenimiento" class="block px-4 py-2 rounded-lg hover:bg-blue-700 transition">🛠️ Mantenimiento</a>
+      <a href="#reportes" class="block px-4 py-2 rounded-lg hover:bg-blue-700 transition">📊 Reportes</a>
+      <a href="#configuracion" class="block px-4 py-2 rounded-lg hover:bg-blue-700 transition">⚙️ Configuración</a>
+    </nav>
+    <div class="p-4 border-t border-blue-700">
+      <a href="login.html" class="w-full bg-red-600 px-4 py-2 rounded-lg hover:bg-red-700 transition text-white text-center block">Salir</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800" id="titulo-seccion">Dashboard</h1>
+      <div class="flex items-center gap-4">
+        <span class="text-gray-600">Administrador</span>
+        <img src="https://i.pravatar.cc/40" class="w-10 h-10 rounded-full border" alt="avatar" />
+      </div>
+    </header>
+
+    <!-- Sección dinámica -->
+    <main id="contenido" class="p-6 overflow-y-auto flex-1">
+      <!-- Aquí se cargará el contenido de cada sección -->
+    </main>
+  </div>
+
+  <!-- Script para navegación dinámica -->
+  <script src="/src/scripts/index.js"></script>
+</body>
+</html>
